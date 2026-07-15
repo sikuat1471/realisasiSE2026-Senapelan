@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rekap SLS/SUB SLS Realisasi Lapangan</title>
+<title>Realisasi Lapangan SE2026 Kec. Senapelan</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -72,9 +72,9 @@
             <div class="w-10 h-10 bg-white/15 backdrop-blur rounded-xl flex items-center justify-center">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
             </div>
-            <h1 class="text-2xl md:text-4xl font-extrabold tracking-tight">Rekap SLS/SUB SLS Realisasi Lapangan</h1>
+            <h1 class="text-2xl md:text-4xl font-extrabold tracking-tight">Realisasi Lapangan SE2026 Kec. Senapelan</h1>
           </div>
-          <p class="text-blue-100 text-sm md:text-base ml-13">Pantau status Open, Submit, Reject, Approve dengan persentase otomatis</p>
+          <p class="text-blue-100 text-sm md:text-base ml-13">Input Data status Open, Submit, Reject, Approve dengan persentase otomatis</p>
         </div>
         <div class="flex items-center gap-3 flex-wrap">
           <button onclick="openKelurahanModal()" class="flex items-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur px-4 py-2.5 rounded-xl border border-white/15 transition-all font-semibold text-sm">
@@ -287,7 +287,7 @@
   </section>
 
   <footer class="mt-8 text-center text-xs text-blue-700">
-    <p>Rekap SLS/SUB SLS Realisasi Lapangan &middot; Persentase dihitung otomatis: <strong>Approve ÷ Jumlah × 100</strong></p>
+    <p>Realisasi Lapangan SE2026 Kec. Senapelan &middot; Persentase dihitung otomatis: <strong>Approve ÷ Jumlah × 100</strong></p>
   </footer>
 </div>
 
@@ -815,7 +815,7 @@
         </style>
       </head>
       <body>
-        <h2>Rekap SLS/SUB SLS Realisasi Lapangan</h2>
+        <h2>Realisasi Lapangan SE2026 Kec. Senapelan</h2>
         <p>Tanggal Cetak: ${new Date().toLocaleString('id-ID')}</p>
         <table>
           <thead>
@@ -994,23 +994,23 @@
   }
   if (slsMaster.length === 0) {
     slsMaster = [
-      { kelurahan: 'Sukamaju', name: 'RT.001 RW.001', code: '3201010001' },
-      { kelurahan: 'Sukamaju', name: 'RT.002 RW.001', code: '3201010002' },
-      { kelurahan: 'Sukamulya', name: 'RT.001 RW.002', code: '3201010003' }
+      { kelurahan: 'Padang Bulan', name: 'RT.001 RW.001', code: '00' },
+      { kelurahan: 'Padang Bulan', name: 'RT.002 RW.001', code: '00' },
+      { kelurahan: 'Padang Bulan', name: 'RT.001 RW.002', code: '00' }
     ];
   }
   if (personnel.length === 0) {
     personnel = [
-      { name: 'Budi Santoso', role: 'PML' },
-      { name: 'Siti Rahayu', role: 'PML' },
-      { name: 'Andi Wijaya', role: 'PPL' },
-      { name: 'Dedi Pratama', role: 'PPL' }
+      { name: 'I Putu Bayu Laksamana', role: 'PML' },
+      { name: 'Deddy Muchrasami', role: 'PML' },
+      { name: 'Roni Januar Saputra', role: 'PML' },
+      { name: 'Jeff Clarence', role: 'PML' }
     ];
   }
   if (data.length === 0) {
     data = [
-      { name: 'RT.001 RW.001', code: '3201010001', kelurahan: 'Sukamaju', pml: 'Budi Santoso', ppl: 'Andi Wijaya', open: 0, submit: 0, reject: 0, approve: 50, timestamp: Date.now() - 86400000 * 3 },
-      { name: 'RT.002 RW.001', code: '3201010002', kelurahan: 'Sukamaju', pml: 'Siti Rahayu', ppl: 'Dedi Pratama', open: 3, submit: 12, reject: 5, approve: 30, timestamp: Date.now() - 86400000 * 2 }
+      { name: 'RT.001 RW.001', code: '00', kelurahan: 'Padang Bulan', pml: 'I Putu Bayu Laksamana', pml: 'Deddy Muchrasami', open: 0, submit: 0, reject: 0, approve: 50, timestamp: Date.now() - 86400000 * 3 },
+      { name: 'RT.002 RW.001', code: '00', kelurahan: 'Padang Bulan', pml: 'Roni Januar Saputra', pml: 'Jeff Clarence', open: 3, submit: 12, reject: 5, approve: 30, timestamp: Date.now() - 86400000 * 2 }
     ];
   }
 
